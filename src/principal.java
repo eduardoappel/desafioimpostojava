@@ -1,4 +1,5 @@
 import java.util.Locale;
+import java.util.Scanner;
 
 public class principal {
 
@@ -28,7 +29,22 @@ public class principal {
 
     double impostoDevido = 0.0;
 
+    // Entrada das informações/dados
+    Scanner sc = new Scanner(System.in);
+
+    System.out.println("\nINFORME OS SEUS RENDIMENTOS PARA O IMPOSTO DE RENDA");
+    System.out.print("Informe a Renda anual com salário: ");
+    salarioAnual = sc.nextDouble();
+    System.out.print("Informe a Renda anual com a Prestação Serviços: ");
+    prestacaoServicoAnual = sc.nextDouble();
+    System.out.print("Informe a Renda anual com Ganho de Capital: ");
+    ganhoCapitalAnual = sc.nextDouble();
     
+    System.out.println("INFORME OS SEUS GASTOS PARA O IMPOSTO DE RENDA");
+    System.out.print("Informe os Gastos médico: ");
+    gastosMedico = sc.nextDouble();
+    System.out.print("Informe os Gastos Esducacionais: ");
+    gastosEducacional = sc.nextDouble();
 
     }
 
