@@ -72,7 +72,24 @@ public class principal {
     // Cálculo do imposto devido
     impostoDevido = impostoBruto - deducaoPermitida;  
     
+    // Relatório de imposto de renda
+    System.out.println("\nRELATÓRIO DE IMPOSTO DE RENDA");
+    System.out.println("\nCONSOLIDADO DE RENDA");
+
+    System.out.printf("Imposto sobre salário: %.2f%n", impostoSobreSalario);   
+    System.out.printf("Imposto sobre serviços: %.2f%n", impostoSobreServico);
+    System.out.printf("Imposto sobre ganho de capital:  %.2f%n", impostoGanhoCapital);
+
+    System.out.println("\nDEDUÇÕES");
+    System.out.printf("Máximo dedutível:  %.2f%n", limiteDeducao);
+    System.out.printf("Gastos dedutíveis: %.2f%n", gastosTotais);
+
+    System.out.println("\nRESUMO"); 
+    System.out.printf("Imposto bruto total: %.2f%n", impostoBruto);
+    System.out.printf("Abatimento: %.2f%n", deducaoPermitida);
+    System.out.printf("Imposto devido: %.2f%n", impostoDevido);
     
+    sc.close();    
 
     }
 
